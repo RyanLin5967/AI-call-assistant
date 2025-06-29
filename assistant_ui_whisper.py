@@ -214,7 +214,6 @@ class AssistantUI(QWidget):
 
    def on_analysis_error(self, error_msg):
        self.result_box.setHtml(f"<span style='color:#ff6f6f;font-size:20px'><b>❌ An error occurred:</b></span><br><span style='font-size:16px'>{error_msg}</span>")
-       print(f"Error in analyze_convo: {error_msg}", file=sys.stderr)
        self.start_button.setEnabled(True)
        self.stop_button.setEnabled(False)
 
